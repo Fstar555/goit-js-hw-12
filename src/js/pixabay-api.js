@@ -18,3 +18,4 @@ export async function getImages(query, currentPage) {
     return responce.data;
 
 }
+
