@@ -6,7 +6,7 @@ const lightbox = new SimpleLightbox('.gallery-link', {
   captionDelay: 250,
 });
 
-export const galeryEl = document.querySelector('.gallery');
+export const galleryEl = document.querySelector('.gallery');
 
 function imageTemplate(obj) {
   const {
@@ -46,6 +46,6 @@ function imageTemplate(obj) {
 
 export function createMarkUp(arr) {
   const markup = imageTemplate(arr);
-  galeryEl.insertAdjacentElement('beforeend', markup);
+  galleryEl.insertAdjacentElement('beforeend', markup);
   lightbox.refresh();
 }
